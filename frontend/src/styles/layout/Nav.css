@@ -1,0 +1,40 @@
+.nav{
+    grid-area: nav;
+    background-color: red;
+    align-content: center;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.nav ul{
+    display: flex;
+    list-style-type: none; /* quitar viñeta */
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 auto;
+}
+.nav li{
+    width: 199px;
+    text-align: center;
+    align-content: center;
+}
+.nav button{
+    width: 70px;
+    border-radius: 5px;
+    padding: 0px;
+    margin: 0px;
+}
+.nav a{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bolder;
+    color:white;
+}
+.nav a:hover{
+    opacity: 0.5;
+    font-weight: bolder;
+    color: black;
+}
+.activo{
+    background-color: rgb(230, 115, 115);
+    color: black;
+}

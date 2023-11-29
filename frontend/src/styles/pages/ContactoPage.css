@@ -1,0 +1,47 @@
+.contenedor-contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 150px 10px;
+    margin: 0 auto;
+
+    @media only screen and (min-width: 1000px){
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 10px;
+        width: 80%;
+    }
+
+}
+.datos-empresa{
+    background-color: rgb(125, 128, 131);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.formulario{
+    background-color: rgb(125, 128, 131);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px;
+    border-radius: 5px;
+
+    @media only screen and (min-width: 1000px){
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        padding: 40px;
+    }
+
+}
+.formulario p label, textarea, button, input{
+    width: 100%;
+    padding: 5px;
+}
+.formulario h5{
+    margin: 0 auto;
+}
+
+.anchoCompleto{
+    grid-column: 1/-1;
+}
+

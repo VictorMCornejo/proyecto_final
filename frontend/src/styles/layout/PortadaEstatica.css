@@ -1,0 +1,16 @@
+.contenedorPortadaEstatica{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../../../public/images/portada002.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+}
+
+.contenedorPortadaEstatica h1{
+    align-self: flex-end;
+    font-size: 50px;
+    color: blanchedalmond;
+    margin: 0;
+    padding: 30px 10px;
+    align-items: flex-end;
+}

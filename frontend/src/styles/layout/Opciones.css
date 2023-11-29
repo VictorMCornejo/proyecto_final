@@ -1,0 +1,30 @@
+.contenedor-opciones{
+    display: grid;
+    grid-gap: 70px;
+    padding: 30px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    @media screen and (min-width: 800px) and (max-width: 999px)
+    {
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        padding: 30px;
+    }
+
+    @media screen and (min-width: 1000px)
+    {
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        padding: 10px;
+    }
+
+}
+.opcion{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: slategrey;
+    border-radius: 10px;
+}
+.opcion h3,h4{
+    margin-bottom: 10px;
+}

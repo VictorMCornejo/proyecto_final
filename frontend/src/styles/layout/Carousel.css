@@ -1,0 +1,47 @@
+.seccion-logos{ /* contenedor general del carousel */
+    padding: 50px 0;
+    position: relative;
+    white-space: nowrap; /* suprime saltos de linea */
+    overflow: hidden; /* hacemos que todo el contenido que sobresale de su contenedor se oculte */
+}
+.carousel-logos{
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+.carousel-logos img{ /* propiedades de la imagen */
+    height: 90px;
+    margin: 0 100px;
+}
+@keyframes slide{ /* animacion a utilizar en el carousel-logos */
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.seccion-logos:hover .carousel-logos{ /* efecto pausa al posicionarme sobre el carousel */
+    animation-play-state: paused;
+}
+
+/* gradiente al principio y al final del carousel */
+
+.seccion-logos::before,
+.seccion-logos::After{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2; 
+}
+.seccion-logos::before{
+    /* Transparencia hacia derecha desde BLANCO transparente al color general de los contenedores del sitio */
+    /* rgba(red,green,blue,alpha) alpha entre 0 (transp) y 1 (no transp)*/
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255,0), rgb(195, 202, 214)); 
+}
+.seccion-logos::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255,0), rgb(195, 202, 214)); 
+}
